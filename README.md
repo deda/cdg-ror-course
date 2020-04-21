@@ -1,4 +1,5 @@
-# cdg-ror-course
+# README
+
 educational app create during RoR Course on CDG Academy
 
 
@@ -27,3 +28,27 @@ educational app create during RoR Course on CDG Academy
 * Shoulda-matchers
 * Capybara
 * rubocop
+
+
+This README should document whatever steps are necessary to get the
+application up and running.
+
+Things to cover later:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
