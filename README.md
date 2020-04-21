@@ -22,8 +22,8 @@ educational app create during RoR Course on CDG Academy
 
 # to use
 
-Devise
-Rspec
-Shoulda-matchers
-Capybara
-rubocop
+* Devise
+* Rspec
+* Shoulda-matchers
+* Capybara
+* rubocop
