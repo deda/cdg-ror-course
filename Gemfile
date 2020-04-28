@@ -69,3 +69,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # gem used in application
 
 gem 'devise'
+gem 'bootstrap'

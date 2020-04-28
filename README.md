@@ -91,5 +91,5 @@ IF not istall form here https://devcenter.heroku.com/articles/heroku-cli
 
 `git push heroku master`
 
-* NB To create new Heroku instance `heroku create`
+⚠ Note: To create new Heroku instance `heroku create`
 
