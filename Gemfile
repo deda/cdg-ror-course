@@ -58,5 +58,13 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :production do
+  gen 'pg', '1.1.4'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# gem used in application
+
+gem 'devise'
