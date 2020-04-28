@@ -2,6 +2,7 @@
 
 educational app create during RoR Course on CDG Academy
 
+running here https://stormy-ocean-22651.herokuapp.com/
 
 # Stories
 
@@ -51,4 +52,31 @@ Things to cover later:
 
 * Deployment instructions
 
-* ...
+
+
+# Development env indstructions (to setup new machine)
+
+## Install rails
+`gem install rails -v $VERSION`
+ i've used 5.2+ for some reason
+
+`bundle install --without production`
+
+## install yarn
+
+`curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -`
+`echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list`
+
+`sudo apt update && sudo apt install yarn`
+
+## Install Heroku CLI
+First check if installed `heroku --version`
+
+IF not istall form here https://devcenter.heroku.com/articles/heroku-cli
+
+`heroku login --interactive`
+
+` git push heroku master`
+
+* NB To create new Heroku instance `heroku create`
+
