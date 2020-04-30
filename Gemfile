@@ -70,5 +70,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'bootstrap', '>= 4.4.0'
+gem 'font-awesome-rails'
 #required by bootstrap gem
 gem 'jquery-rails'
