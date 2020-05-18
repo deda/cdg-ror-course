@@ -40,7 +40,7 @@ input{
 }
 }
 .footer{
-font-size: 12px;
+font-size: 8px;
 padding-top: 30px;
 ul{
     padding-left: 0;
@@ -49,6 +49,10 @@ ul{
     padding-right: 15px;
     color: #003569;
     }
+}
+.blockquote {
+    font-size: 1.02rem;
+    font-weight: 200;
 }
 p{
     color: #999;

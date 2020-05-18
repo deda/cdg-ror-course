@@ -23,3 +23,4 @@ test:
 
 production:
   url: <%= ENV['DATABASE_URL'] %>
+# this url: take DB creds form heroku ENV so you can have currecnt Heroku PG DB cred which are dynamical 
