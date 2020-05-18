@@ -7,11 +7,11 @@ module ApplicationHelper
             notice: "alert-info" 
         }.stringify_keys[flash_type.to_s] || flash_type.to_s
       end
-
+#this is done with content_tag just for practice and lulz
       def flash_messages(opts = {})
         flash.each do |msg_type, message|
           concat(content_tag(:div, message, class: "alert #{bootstrap_class_for(msg_type)}", role: "alert") do 
-                  concat content_tag(:button, 'x', class: "close", data: { dismiss: 'alert' })
+                  concat content_tag(:button, '&times;'.html_safe, class: "close", data: { dismiss: 'alert' })
                   concat message 
                 end)
         end
