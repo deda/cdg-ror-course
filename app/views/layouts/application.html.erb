@@ -9,37 +9,44 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
-
-
   <body>
-    <nav class="navbar navbar-light bg-light d-flex">    
-        <div id="container">
-      <div class="user-section">
-        <a class="fa fa-home" href="<%=root_path%>"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "home", root_path, class: "nav-link"%>
+        </li>
         <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>. 
-          <%= link_to 'edit profile', edit_user_registration_path %> 
-          <%= link_to "logout", destroy_user_session_path, method: :delete %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><%= current_user.email %></a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <%= link_to 'edit profile', edit_user_registration_path, class: "dropdown-item" %>
+            <%= link_to "logout", destroy_user_session_path, class: "dropdown-item" , method: :delete %>
+          </div>
+        </li>
         <% else %>
-          <%= link_to "sign up", new_user_registration_path %> 
-          <%= link_to "login", new_user_session_path %>
+          <li class="nav-item">
+            <%= link_to "sign up", new_user_registration_path, class: "nav-link" %> 
+          </li>
+          <li class="nav-item">
+            <%= link_to "login", new_user_session_path, class: "nav-link" %>
+          </li>
         <% end %>
-      </div>
-          <%= flash_messages %> 
-      
-      
-      
-      </div>
+      </ul>
+      <%= flash_messages %> 
     </nav>
+
+
     <div class="container">
       <%= yield %>
     </div>
-     <footer class="container footer">
+    
+    
+    <footer class="container footer">
       <blockquote class="blockquote text-right">
-  <p class="mb-0">Таблица Менделеева сначала приснилась Пушкину, но он ничего не понял.</p>
-  <footer class="blockquote-footer">Сергей Попов <cite title="Source Title">Астрофизик</cite></footer>
-</blockquote>
-     </footer>
+        <p class="mb-0">Таблица Менделеева сначала приснилась Пушкину, но он ничего не понял.</p>
+          <footer class="blockquote-footer">Сергей Попов <cite title="Source Title">Астрофизик</cite></footer>
+      </blockquote>
+    </footer>
+
   </body>
 </html>
